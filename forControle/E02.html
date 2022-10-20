@@ -13,11 +13,29 @@
 
     //ENTRADA
 
+    const abasteceu = parseInt(prompt("Quantas vezes o senhor abasteceu o seu carro meu fi"))
+
+    const distancia = parseInt(prompt("Quantos KM o senhor andou com o seu carro meu fi"))
+
+    let custo = 0
+
+    let custototal = 0
 
     //PROCESSAMENTO
+
+    for (let contador = 1 ; contador <= abasteceu ; contador++) {
+
+        let preco = prompt(`Quanto custou o ${contador} abastecimento`)
+
+        custototal = custototal + preco
+
+    }
+
+    custo = distancia / custototal
 
 
     //SAÍDA
 
+    document.write(`Custo de cada quilimetro ${custo} <br/> custo total ${custototal} <br/> Quilometragem percorrida ${distancia}`)
 
 </script>

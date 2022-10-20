@@ -8,11 +8,29 @@
 
     //ENTRADA
 
+    const alunos = parseInt(prompt("Quantos alunos voce possui?"))
+
+    let meninos = []
+
+    let meninas = []
 
     //PROCESSAMENTO
 
+    for (let contador = 1; contador <= alunos; contador++) {
+        let nomes = prompt(`nome do  ${contador} aluno`)
+        let genero = prompt(`menino ou menina`)
+
+        if (genero === "menino") {
+            meninos.push(nomes)
+        } else if (genero === "menina") {
+            meninas.push(nomes)
+        }
+
+
+    }
 
     //SAÍDA
 
+    document.write(`meninos: ${meninos.sort()} <br/> meninas: ${meninas.sort()}`)
     
 </script>

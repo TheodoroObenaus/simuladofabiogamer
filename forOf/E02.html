@@ -9,11 +9,20 @@
 
     //ENTRADA
 
+    let nomePessoas = ["Eduardo da Silva", "Eduardo Montandon", "Lucas Eduardo", "José da Silva", "Rafael Gonçalves"];
+
+    let comsilva = []
 
     //PROCESSAMENTO
 
+    for (nomes of nomePessoas) {
+        if (nomes.indexOf("Silva") >= 0){
+            comsilva.push(nomes)
+        }
+    }
 
     //SAÍDA
 
+    document.write(`Descendentes da familia silva: ${comsilva} <br/> Quantidade de descendentes ${comsilva.length}`)
 
 </script>

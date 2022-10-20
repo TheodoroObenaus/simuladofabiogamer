@@ -9,11 +9,26 @@
 
     //ENTRADA
 
+    let listaLivros = ["A Arte da Guerra", "Sistemas Inteligentes", "Introdução a Programação com JS", "1984", "Use a cabeça: JS"];
+
+    let tectnico = []
+
+    let ficcao = []
 
     //PROCESSAMENTO
 
+    for (livros of listaLivros) {
+        let opcao = prompt(`${livros} f para ficção e t para técnico`)
+
+        if (opcao === "f") {
+            ficcao.push(livros)
+        } else {
+            tectnico.push(livros)
+        }
+    }
 
     //SAÍDA
 
+    document.write(`livros técnicos ${tectnico} <br/> livros de romance ${ficcao}`)
 
 </script>
