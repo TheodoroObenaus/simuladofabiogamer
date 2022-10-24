@@ -25,7 +25,7 @@
 
     for (let contador = 1 ; contador <= abasteceu ; contador++) {
 
-        let preco = prompt(`Quanto custou o ${contador} abastecimento`)
+        let preco = Number(prompt(`Quanto custou o ${contador} abastecimento`))
 
         custototal = custototal + preco
 
@@ -36,6 +36,6 @@
 
     //SAÍDA
 
-    document.write(`Custo de cada quilimetro ${custo} <br/> custo total ${custototal} <br/> Quilometragem percorrida ${distancia}`)
+    document.write(`Custo de cada quilimetro ${custo.toFixed(2)} <br/> custo total ${custototal} <br/> Quilometragem percorrida ${distancia}`)
 
 </script>
