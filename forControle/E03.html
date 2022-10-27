@@ -12,10 +12,22 @@
 
     //ENTRADA
 
+    let inicial = Number(prompt("Qual é o investimento inicial?"))
 
-    
+    let mes = 0
 
     //PROCESSAMENTO
 
+    const dobro = inicial * 2
+
+    const rende = 0.005
+
+    for(mes = 0; inicial <= dobro; mes ++) {
+        inicial = inicial + (inicial * rende)
+    }
+
     //SAÍDA
+
+    document.write(`Investimento inicial ${inicial.toFixed(2)} <br/> serão nescessarios ${mes} para dobrar esse valor`)
+
 </script>
